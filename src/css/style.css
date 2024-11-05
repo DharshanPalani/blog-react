@@ -1,0 +1,82 @@
+body { 
+    margin: 0px;
+    color: white;
+    background-color: rgb(249, 126, 177);
+}
+
+.header {
+    font-family: comic;
+    text-align: center;
+    font-size: 150%;
+}
+
+.content h2 {
+    text-align: center;
+}
+
+.banner {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuNLQcUtdErsaVaXScq3XuUF3je25lZSjoFQ&s");
+    background-color: rgb(210, 81, 135);
+    background-blend-mode: color-burn;
+}
+
+.blogcontainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.blogs {
+    background-color: rgb(210, 81, 135);
+    /* display: flex; */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    border-radius: 15px;
+    text-decoration: none;
+    padding: 20px;
+    margin: 10px;
+}
+
+.blogtitle {
+    text-align: center;
+    font-size: 120%;
+    margin-bottom: 10px;
+}
+
+.blogdescription {
+    text-align: center;
+    font-size: 100%;
+}
+
+
+/* Mobile compatablity style 
+
+(It just changes some shit to make it look good for mobile)
+*/
+
+
+@media (max-width: 800px) {
+    .blogs {
+        width: 50%;
+    }
+}
+
+@media (max-width: 480px) {
+    .blogs {
+        width: 100%;
+    }
+
+    .header {
+        font-size: 120%; 
+    }
+
+    .blogtitle {
+        font-size: 110%;
+    }
+
+    .blogdescription {
+        font-size: 100%;
+    }
+}
